@@ -11,7 +11,6 @@ class DSPSYSSTSView extends WatchUi.WatchFace {
     var showMessages = false;
     var height = 416;
     var width = 416;
-    var lineHeight = 34;
     var displayEntries;
     var is24Hour = false;
 
@@ -55,26 +54,26 @@ class DSPSYSSTSView extends WatchUi.WatchFace {
 
         var systemStats = System.getSystemStats();
         var batteryFormatted = leftPadString(systemStats.battery.format("%1.1f"), 5);
-        var batteryString = Lang.format("% Battery  : $1$", [batteryFormatted]);
+        var batteryString = Lang.format("% Battery . : $1$", [batteryFormatted]);
 
         var body =  batteryString;
 
         if(showSteps) {
             var actInfo = ActivityMonitor.getInfo();
             var stepsString = leftPadString(Lang.format("$1$", [actInfo.steps]), 5);
-            body += "\nSteps  . . : "+stepsString;
+            body += "\nSteps . . . : "+stepsString;
         }
 
         if(showHr) {
             var pulse = getHeartRate();
             var pulseString = leftPadString(Lang.format("$1$", [pulse]), 5);
-            body += "\nPulse  . . : "+pulseString;
+            body += "\nPulse . . . : "+pulseString;
         }
 
         if(showMessages) {
             var messages = System.getDeviceSettings().notificationCount;
             var messageString = leftPadString(Lang.format("$1$", [messages]), 5);
-            body += "\nMessages . : "+messageString;
+            body += "\nMessages  . : "+messageString;
         }
 
         var dateTime = View.findDrawableById("DateTime") as Text;
