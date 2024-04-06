@@ -1,5 +1,5 @@
 <layout id="WatchFace">
-    <label id="Title" text="Display System Status" x="center" y="90" font="#KosugiRegular:34" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_LT_GRAY" />
-    <label id="DateTime" x="right" y="130" font="#KosugiRegular:34" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_GREEN" />
-    <label id="Content" x="center" y="170" font="#KosugiRegular:34" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_GREEN" />
+    <label id="Title" text="Display System Status" x="center" y="90" font="@Fonts.id_5250_font" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_LT_GRAY" />
+    <label id="DateTime" x="right" y="130" font="@Fonts.id_5250_font" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_GREEN" />
+    <label id="Content" x="center" y="170" font="@Fonts.id_5250_font" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_GREEN" />
 </layout>
